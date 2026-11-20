@@ -1,30 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="bn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For Sadia Sultana ❤️</title>
-
+<title>For Nipa ❤️</title>
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
 body{
     min-height:100vh;
-    background:
-    radial-gradient(circle at center,#680020 0%,#27000d 45%,#080002 100%);
+    background:radial-gradient(circle at center,#680020 0%,#27000d 45%,#080002 100%);
     color:white;
     font-family:Georgia,"Noto Serif Bengali",serif;
     overflow:hidden;
 }
-
-/* =====================
-   INTRO
-===================== */
-
 .intro{
     position:fixed;
     inset:0;
@@ -34,49 +27,37 @@ body{
     align-items:center;
     justify-content:center;
     text-align:center;
-    background:
-    radial-gradient(circle,#760027,#160005 70%);
+    background:radial-gradient(circle,#760027,#160005 70%);
     transition:1.5s;
 }
-
 .intro.hide{
     opacity:0;
     visibility:hidden;
 }
-
 .rose{
     font-size:115px;
     animation:roseBeat 1.7s infinite alternate;
     filter:drop-shadow(0 0 30px #ff1744);
 }
-
 .intro h1{
     margin-top:25px;
     font-size:30px;
     opacity:0;
     animation:appear 2s 1s forwards;
 }
-
 .intro p{
     margin-top:12px;
     color:#ffc1d0;
     opacity:0;
     animation:appear 2s 2.5s forwards;
 }
-
 @keyframes roseBeat{
     from{transform:scale(.8) rotate(-5deg)}
     to{transform:scale(1.15) rotate(5deg)}
 }
-
 @keyframes appear{
     to{opacity:1}
 }
-
-/* =====================
-   OPEN SCREEN
-===================== */
-
 .open{
     position:fixed;
     inset:0;
@@ -90,17 +71,14 @@ body{
     pointer-events:none;
     transition:1s;
 }
-
 .open.active{
     opacity:1;
     pointer-events:auto;
 }
-
 .open h2{
     font-size:25px;
     margin-bottom:25px;
 }
-
 .openBtn{
     border:0;
     padding:16px 32px;
@@ -112,18 +90,12 @@ body{
     box-shadow:0 0 30px rgba(255,23,68,.8);
     animation:pulse 1.5s infinite;
 }
-
 @keyframes pulse{
     50%{
         transform:scale(1.08);
         box-shadow:0 0 50px rgba(255,23,68,1);
     }
 }
-
-/* =====================
-   ENVELOPE
-===================== */
-
 .envelopeBox{
     position:fixed;
     inset:0;
@@ -133,7 +105,6 @@ body{
     justify-content:center;
     pointer-events:none;
 }
-
 .envelope{
     width:310px;
     height:205px;
@@ -144,12 +115,10 @@ body{
     transform:scale(.7);
     transition:1s;
 }
-
 .envelope.show{
     opacity:1;
     transform:scale(1);
 }
-
 .flap{
     position:absolute;
     top:0;
@@ -163,11 +132,9 @@ body{
     transition:1.2s;
     z-index:5;
 }
-
 .envelope.open .flap{
     transform:rotateX(180deg);
 }
-
 .paper{
     position:absolute;
     width:270px;
@@ -177,15 +144,9 @@ body{
     top:15px;
     transition:1.5s;
 }
-
 .envelope.open .paper{
     transform:translateY(-150px);
 }
-
-/* =====================
-   LETTER
-===================== */
-
 .letterPage{
     position:relative;
     min-height:100vh;
@@ -194,7 +155,6 @@ body{
     align-items:center;
     justify-content:center;
 }
-
 .letter{
     width:100%;
     max-width:680px;
@@ -205,35 +165,29 @@ body{
     color:#421a22;
     border-radius:15px;
     box-shadow:0 0 60px rgba(255,50,100,.45);
-
     opacity:0;
     transform:scale(.7);
     transition:2s;
 }
-
 .letter.visible{
     opacity:1;
     transform:scale(1);
 }
-
 .letter h1{
     text-align:center;
     color:#b0003a;
     margin-bottom:10px;
 }
-
 .date{
     text-align:right;
     color:#777;
     margin-bottom:25px;
 }
-
 .letter p{
     font-size:18px;
     line-height:2;
     margin-bottom:17px;
 }
-
 .quote{
     text-align:center;
     color:#b0003a;
@@ -241,34 +195,25 @@ body{
     font-weight:bold;
     margin:25px 0;
 }
-
 .signature{
     text-align:right;
     color:#a00036;
     font-size:19px;
     margin-top:30px;
 }
-
 .final{
     margin-top:30px;
     padding-top:25px;
     border-top:1px solid #e2b6c0;
     text-align:center;
 }
-
 .final h2{
     color:#b0003a;
     font-size:30px;
 }
-
 .final p{
     margin-top:8px;
 }
-
-/* =====================
-   🌹 FALLING PETALS
-===================== */
-
 .petal{
     position:fixed;
     top:-40px;
@@ -276,270 +221,158 @@ body{
     pointer-events:none;
     animation:fall linear forwards;
 }
-
 @keyframes fall{
     0%{
         transform:translateY(0) rotate(0);
         opacity:0;
     }
-
-    15%{
-        opacity:1;
-    }
-
+    15%{opacity:1}
     100%{
         transform:translateY(110vh) rotate(720deg);
         opacity:0;
     }
 }
-
-/* =====================
-   MOBILE
-===================== */
-
 @media(max-width:500px){
-
-    .rose{
-        font-size:90px;
-    }
-
-    .intro h1{
-        font-size:24px;
-    }
-
+    .rose{font-size:90px}
+    .intro h1{font-size:24px}
     .open h2{
         font-size:21px;
         padding:0 20px;
     }
-
-    .letter{
-        padding:25px 20px;
-    }
-
-    .letter p{
-        font-size:16px;
-    }
-
-    .quote{
-        font-size:18px;
-    }
+    .letter{padding:25px 20px}
+    .letter p{font-size:16px}
+    .quote{font-size:18px}
 }
 </style>
 </head>
-
 <body>
-
-<!-- 🌹 INTRO -->
-
+<!-- INTRO -->
 <div class="intro" id="intro">
-
     <div class="rose">🌹</div>
-
-    <h1>সাদিয়া সুলতানার জন্য...</h1>
-
+    <h1>নিপার জন্য...</h1>
     <p>একটা গোলাপ • একটা চিঠি • কিছু অনুভূতি ❤️</p>
-
 </div>
-
-
-<!-- 💌 OPEN -->
-
+<!-- OPEN -->
 <div class="open" id="open">
-
     <h2>
-        সাদিয়া, তোমার জন্য<br>
+        নিপা, তোমার জন্য<br>
         একটা ছোট্ট surprise আছে 💌
     </h2>
-
     <button class="openBtn" onclick="openLetter()">
         💌 Open My Letter
     </button>
-
 </div>
-
-
-<!-- ✉️ ENVELOPE -->
-
+<!-- ENVELOPE -->
 <div class="envelopeBox">
-
     <div class="envelope" id="envelope">
-
         <div class="paper"></div>
-
         <div class="flap"></div>
-
     </div>
-
 </div>
-
-
-<!-- 💌 LETTER -->
-
+<!-- LETTER -->
 <div class="letterPage">
-
 <div class="letter" id="letter">
-
     <div class="date">
         ১লা সেপ্টেম্বর, ২০২৬
     </div>
-
-    <h1>💌 প্রিয় সাদিয়া সুলতানা,</h1>
-
+    <h1>💌 প্রিয় নিপা,</h1>
     <p>
         আজ ১লা সেপ্টেম্বর—চিঠি দিবস। 🌹
         তাই আজ তোমার জন্য এই ছোট্ট চিঠিটা
         লিখতে বসেছি।
     </p>
-
     <p>
         জানি, কয়েকটা শব্দ দিয়ে মনের সব কথা
         কখনো প্রকাশ করা যায় না। তবুও কিছু
         অনুভূতি থাকে, যেগুলো বলা না হলেও
         অনুভব করা যায়।
     </p>
-
     <p>
-        সাদিয়া, জীবনে অনেক মানুষের সাথে
+        নিপা, জীবনে অনেক মানুষের সাথে
         আমাদের পরিচয় হয়। কেউ আসে কিছু
         সময়ের জন্য, আবার কেউ অজান্তেই
         মনের খুব কাছের একজন হয়ে যায়।
     </p>
-
     <p>
         তুমি আমার কাছে ঠিক তেমনই একজন।
         তোমার হাসি, তোমার কথা এবং তোমার
         সাথে কাটানো ছোট ছোট মুহূর্তগুলো
         আমার কাছে সবসময় আলাদা। ❤️
     </p>
-
     <div class="quote">
         “কিছু মানুষকে ভালো লাগার কোনো কারণ
         থাকে না—তারা শুধু ভালো লেগে যায়।” ❤️
     </div>
-
     <p>
         হয়তো সবসময় তোমাকে আমার মনের
         কথাগুলো ঠিকভাবে বলতে পারিনি।
         অনেক কথা হয়তো না বলেই থেকে গেছে।
     </p>
-
     <p>
         কিন্তু আজ চিঠি দিবসে একটা কথা
         বলতে চাই—
         <b>তুমি আমার কাছে সত্যিই অনেক special।</b>
     </p>
-
     <p>
         তোমার প্রতিটা দিন সুন্দর হোক,
         তোমার মুখের হাসি সবসময় এমনই থাকুক।
         তোমার সব স্বপ্ন পূরণ হোক—
         এই কামনাটাই থাকবে। 🌸
     </p>
-
     <p>
         আর কোনো একদিন যদি হঠাৎ এই চিঠিটা
         তোমার মনে পড়ে, তখন শুধু মনে করবে—
         পৃথিবীর কোথাও একজন মানুষ আছে,
         যে তোমার হাসিটাকে খুব সুন্দর মনে করে। ❤️
     </p>
-
     <div class="quote">
-        সাদিয়া, তুমি আমার গল্পের খুব সুন্দর
+        নিপা, তুমি আমার গল্পের খুব সুন্দর
         একটা অধ্যায়। 🌹
     </div>
-
     <div class="signature">
         ভালো থেকো সবসময়... ❤️<br><br>
         <b>তোমার জন্য লেখা<br>
         একটি ছোট্ট চিঠি</b>
     </div>
-
     <div class="final">
-
-        <h2>I Love You, Sadia ❤️</h2>
-
+        <h2>I Love You, Nipa ❤️</h2>
         <p>
-            Happy Letter Day, Sadia Sultana 💌
+            Happy Letter Day, Nipa 💌
         </p>
-
         <p>
             🌹❤️🌹❤️🌹
         </p>
-
     </div>
-
 </div>
-
 </div>
-
-
-<!-- 🎵 MUSIC -->
-
+<!-- MUSIC -->
 <audio id="music" loop>
     <source src="music.mp3" type="audio/mpeg">
 </audio>
-
-
 <script>
-
-/* =====================
-   INTRO → OPEN SCREEN
-===================== */
-
+// INTRO → OPEN SCREEN
 setTimeout(function(){
-
-    document.getElementById("intro")
-    .classList.add("hide");
-
-    document.getElementById("open")
-    .classList.add("active");
-
+    document.getElementById("intro").classList.add("hide");
+    document.getElementById("open").classList.add("active");
 },6000);
-
-
-/* =====================
-   OPEN LETTER
-===================== */
-
+// OPEN LETTER
 function openLetter(){
-
-    const open =
-        document.getElementById("open");
-
-    const envelope =
-        document.getElementById("envelope");
-
-    const letter =
-        document.getElementById("letter");
-
-    const music =
-        document.getElementById("music");
-
+    const open = document.getElementById("open");
+    const envelope = document.getElementById("envelope");
+    const letter = document.getElementById("letter");
+    const music = document.getElementById("music");
     open.classList.remove("active");
-
     envelope.classList.add("show");
-
-    /* Music starts after button click */
     music.play().catch(function(){});
-
     setTimeout(function(){
         envelope.classList.add("open");
     },700);
-
     setTimeout(function(){
-
         envelope.style.display="none";
-
         letter.classList.add("visible");
-
     },2600);
 }
-
-
-/* =====================
-   🌹 FALLING PETALS
-===================== */
-
+// FALLING PETALS
 const petals=[
     "🌹",
     "🌸",
@@ -548,37 +381,21 @@ const petals=[
     "💖",
     "✨"
 ];
-
 function createPetal(){
-
     const p=document.createElement("div");
-
     p.className="petal";
-
-    p.innerHTML=
-        petals[Math.floor(
-            Math.random()*petals.length
-        )];
-
-    p.style.left=
-        Math.random()*100+"vw";
-
-    p.style.fontSize=
-        (14+Math.random()*24)+"px";
-
-    p.style.animationDuration=
-        (5+Math.random()*6)+"s";
-
+    p.innerHTML=petals[
+        Math.floor(Math.random()*petals.length)
+    ];
+    p.style.left=Math.random()*100+"vw";
+    p.style.fontSize=(14+Math.random()*24)+"px";
+    p.style.animationDuration=(5+Math.random()*6)+"s";
     document.body.appendChild(p);
-
     setTimeout(function(){
         p.remove();
     },12000);
 }
-
 setInterval(createPetal,450);
-
 </script>
-
 </body>
 </html>
